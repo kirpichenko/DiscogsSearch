@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchItemCell" id="6Mo-EF-1ty" customClass="SearchItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Mo-EF-1ty" id="CRY-oA-IJQ">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="olR-GV-v1U">
+                        <rect key="frame" x="3" y="3" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="0b1-KN-hRS"/>
+                            <constraint firstAttribute="width" constant="44" id="WhP-dV-iHZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5z-N3-hIL">
+                        <rect key="frame" x="55" y="3" width="257" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43" id="Alw-ko-yil"/>
+                            <constraint firstAttribute="width" constant="257" id="fSv-iG-PqH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="olR-GV-v1U" firstAttribute="top" secondItem="X5z-N3-hIL" secondAttribute="top" id="AZV-NA-jCR"/>
+                    <constraint firstItem="X5z-N3-hIL" firstAttribute="leading" secondItem="olR-GV-v1U" secondAttribute="trailing" constant="8" id="Usg-DE-R6y"/>
+                    <constraint firstItem="olR-GV-v1U" firstAttribute="leading" secondItem="CRY-oA-IJQ" secondAttribute="leadingMargin" constant="-5" id="dJi-9A-sGy"/>
+                    <constraint firstItem="olR-GV-v1U" firstAttribute="top" secondItem="CRY-oA-IJQ" secondAttribute="topMargin" constant="-5" id="sgm-le-duY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="thumbImageView" destination="olR-GV-v1U" id="Zpr-py-9gs"/>
+                <outlet property="titleLabel" destination="X5z-N3-hIL" id="nQF-8k-kWG"/>
+            </connections>
+            <point key="canvasLocation" x="153" y="311"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

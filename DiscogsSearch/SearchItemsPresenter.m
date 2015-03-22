@@ -8,16 +8,38 @@
 
 #import "SearchItemsPresenter.h"
 
+#import "Artist.h"
+#import "ArtistViewController.h"
+
+@interface SearchItemsPresenter ()
+@property (nonatomic, weak) UINavigationController *navigationController;
+@end
+
 @implementation SearchItemsPresenter
+
+#pragma mark - Life Cycle
+
+- (id)initWithNavigationController:(UINavigationController *)navigationController
+{
+    if (self = [super init]) {
+        self.navigationController = navigationController;
+    }
+    return self;
+}
 
 #pragma mark - Public
 
-- (void)searchItemsFound:(NSDictionary *)items
+- (void)presentItem:(Item *)item
 {
+    UIViewController *presentingController;
+
+    if ([item isKindOfClass:[Artist class]]) {
+        presentingController = [[ArtistViewController alloc] initWithArtist:(Artist *)item];
+    }
     
+    if (presentingController) {
+        [self.navigationController pushViewController:presentingController animated:YES];
+    }
 }
-
-
-#pragma mark - UITableViewDelegate
 
 @end

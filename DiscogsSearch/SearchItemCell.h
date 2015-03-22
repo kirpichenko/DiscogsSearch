@@ -1,5 +1,5 @@
 //
-//  SearchItemsPresenter.h
+//  SearchItemCell.h
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/22/15.
@@ -10,10 +10,10 @@
 
 @class Item;
 
-@interface SearchItemsPresenter : NSObject
+@interface SearchItemCell : UITableViewCell
 
-- (id)initWithNavigationController:(UINavigationController *)navigationController;
+- (void)updateWithItem:(Item *)item;
 
-- (void)presentItem:(Item *)item;
+@property (nonatomic, readonly) Item *item;
 
 @end
