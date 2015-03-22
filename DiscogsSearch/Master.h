@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Ievgeniy Kirpichenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Item.h"
 
-@interface Master : NSObject
+@interface Master : Item
 
 @end

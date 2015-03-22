@@ -29,6 +29,10 @@
                                         <outlet property="delegate" destination="vXZ-lx-hvc" id="iat-Yk-tB7"/>
                                     </connections>
                                 </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="wsa-t7-m1Q"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="cmB-kT-1Zk"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -39,6 +43,9 @@
                             <constraint firstItem="5hs-7p-xkE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="hDk-Ra-cax"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="5hs-7p-xkE" id="80m-7F-9Yp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

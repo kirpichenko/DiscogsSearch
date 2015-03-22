@@ -1,14 +1,14 @@
 //
-//  Artist.m
+//  Item.m
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/22/15.
 //  Copyright (c) 2015 Ievgeniy Kirpichenko. All rights reserved.
 //
 
-#import "Artist.h"
+#import "Item.h"
 
-@implementation Artist
+@implementation Item
 
 + (EKObjectMapping *)objectMapping
 {

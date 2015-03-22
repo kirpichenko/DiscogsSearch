@@ -1,13 +1,13 @@
 //
-//  Artist.h
+//  Label.m
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/22/15.
 //  Copyright (c) 2015 Ievgeniy Kirpichenko. All rights reserved.
 //
 
-#import "Item.h"
+#import "Label.h"
 
-@interface Artist : Item
+@implementation Label
 
 @end

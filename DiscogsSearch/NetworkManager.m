@@ -32,8 +32,8 @@
                           error:(NSError *__autoreleasing *)error
 {
     id responseObject = [super responseObjectForResponse:response data:data error:error];
-    if (error == nil) {
-        responseObject = [self.serializer responseObjectForResponse:response data:data error:error];
+    if (*error == nil) {
+        responseObject = [self.serializer serializeJSONObject:responseObject];
     }
 
     return responseObject;

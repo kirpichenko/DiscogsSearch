@@ -10,6 +10,6 @@
 
 @interface SearchItemsPresenter : NSObject <UITableViewDataSource, UITableViewDataSource>
 
-- (void)searchItemsFound:(NSArray *)items;
+- (void)searchItemsFound:(NSDictionary *)items;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  Artist.h
+//  Label.h
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/22/15.
@@ -8,6 +8,6 @@
 
 #import "Item.h"
 
-@interface Artist : Item
+@interface Label : Item
 
 @end

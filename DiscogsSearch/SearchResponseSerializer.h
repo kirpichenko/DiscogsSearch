@@ -1,5 +1,5 @@
 //
-//  NetworkResponseSerializerFactory.h
+//  SearchResponseSerializer.h
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/22/15.
@@ -8,8 +8,6 @@
 
 #import "NetworkResponseSerializer.h"
 
-@interface NetworkResponseSerializerFactory : NSObject
-
-+ (id<NetworkResponseSerializer>)searchResponseSerializer;
+@interface SearchResponseSerializer : NSObject <NetworkResponseSerializer>
 
 @end

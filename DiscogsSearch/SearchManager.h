@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^SearchCompletionBlock)(NSArray *items, NSError *error);
+typedef void(^SearchCompletionBlock)(NSDictionary *items, NSError *error);
 
 @interface SearchManager : NSObject
 

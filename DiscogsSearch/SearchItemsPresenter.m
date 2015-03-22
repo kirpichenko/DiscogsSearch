@@ -12,23 +12,11 @@
 
 #pragma mark - Public
 
-- (void)searchItemsFound:(NSArray *)items
+- (void)searchItemsFound:(NSDictionary *)items
 {
     
 }
 
-#pragma mark - UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return nil;
-    
-}
 
 #pragma mark - UITableViewDelegate
 

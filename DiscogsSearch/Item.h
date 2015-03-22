@@ -1,5 +1,5 @@
 //
-//  NetworkResponseSerializer.h
+//  Item.h
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/22/15.
@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol NetworkResponseSerializer <NSObject>
+#import "EKMappingProtocol.h"
 
-- (id)serializeJSONObject:(id)JSONObject;
+@interface Item : NSObject <EKMappingProtocol>
+
+@property (nonatomic, strong) NSString *title;
+
+@property (nonatomic, strong) NSURL *thumbURL;
 
 @end

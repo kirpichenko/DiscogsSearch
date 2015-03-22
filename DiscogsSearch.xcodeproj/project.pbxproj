@@ -19,9 +19,12 @@
 		9E4D6E041ABF25B200C5289F /* SearchItemsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D6E031ABF25B200C5289F /* SearchItemsPresenter.m */; };
 		9E7B5F8A1ABF45190087D045 /* NetworkRequestsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5F891ABF45190087D045 /* NetworkRequestsFactory.m */; };
 		9E7B5F8E1ABF4AA30087D045 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5F8D1ABF4AA30087D045 /* NetworkManager.m */; };
-		9E7B5F911ABF4B150087D045 /* NetworkResponseSerializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5F901ABF4B150087D045 /* NetworkResponseSerializerFactory.m */; };
 		9E7B5F9B1ABF5B9D0087D045 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5F9A1ABF5B9D0087D045 /* Artist.m */; };
 		9E7B5F9E1ABF5BE00087D045 /* Master.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5F9D1ABF5BE00087D045 /* Master.m */; };
+		9E7B5FA81ABF5D920087D045 /* Release.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FA71ABF5D920087D045 /* Release.m */; };
+		9E7B5FAB1ABF5D9F0087D045 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FAA1ABF5D9F0087D045 /* Label.m */; };
+		9E7B5FB11ABF5EFA0087D045 /* SearchResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FB01ABF5EFA0087D045 /* SearchResponseSerializer.m */; };
+		9E7B5FB41ABF63DB0087D045 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FB31ABF63DB0087D045 /* Item.m */; };
 		BC32062B2B81CA3CAFFC890E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D82483B28181D07A7AD6AF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,13 +65,19 @@
 		9E7B5F8B1ABF45860087D045 /* NetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
 		9E7B5F8C1ABF4AA30087D045 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		9E7B5F8D1ABF4AA30087D045 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
-		9E7B5F8F1ABF4B150087D045 /* NetworkResponseSerializerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkResponseSerializerFactory.h; sourceTree = "<group>"; };
-		9E7B5F901ABF4B150087D045 /* NetworkResponseSerializerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkResponseSerializerFactory.m; sourceTree = "<group>"; };
 		9E7B5F951ABF4CA90087D045 /* NetworkResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkResponseSerializer.h; sourceTree = "<group>"; };
 		9E7B5F991ABF5B9D0087D045 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		9E7B5F9A1ABF5B9D0087D045 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		9E7B5F9C1ABF5BE00087D045 /* Master.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Master.h; sourceTree = "<group>"; };
 		9E7B5F9D1ABF5BE00087D045 /* Master.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Master.m; sourceTree = "<group>"; };
+		9E7B5FA61ABF5D920087D045 /* Release.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Release.h; sourceTree = "<group>"; };
+		9E7B5FA71ABF5D920087D045 /* Release.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Release.m; sourceTree = "<group>"; };
+		9E7B5FA91ABF5D9F0087D045 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		9E7B5FAA1ABF5D9F0087D045 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		9E7B5FAF1ABF5EFA0087D045 /* SearchResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResponseSerializer.h; sourceTree = "<group>"; };
+		9E7B5FB01ABF5EFA0087D045 /* SearchResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResponseSerializer.m; sourceTree = "<group>"; };
+		9E7B5FB21ABF63DB0087D045 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		9E7B5FB31ABF63DB0087D045 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		B5D7E7A3078D1C7D96EC5FDC /* libPods-DiscogsSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiscogsSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D66A7E66952D9D1C0DB02 /* Pods-DiscogsSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscogsSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiscogsSearchTests/Pods-DiscogsSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,13 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				9E7B5F8B1ABF45860087D045 /* NetworkConstants.h */,
-				9E7B5F951ABF4CA90087D045 /* NetworkResponseSerializer.h */,
-				9E7B5F881ABF45190087D045 /* NetworkRequestsFactory.h */,
-				9E7B5F891ABF45190087D045 /* NetworkRequestsFactory.m */,
-				9E7B5F8F1ABF4B150087D045 /* NetworkResponseSerializerFactory.h */,
-				9E7B5F901ABF4B150087D045 /* NetworkResponseSerializerFactory.m */,
 				9E7B5F8C1ABF4AA30087D045 /* NetworkManager.h */,
 				9E7B5F8D1ABF4AA30087D045 /* NetworkManager.m */,
+				9E7B5FAE1ABF5EC10087D045 /* RequestSerializing */,
+				9E7B5FAD1ABF5E9B0087D045 /* ResponseSerializing */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -195,12 +201,37 @@
 		9E7B5F981ABF5B850087D045 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9E7B5FB21ABF63DB0087D045 /* Item.h */,
+				9E7B5FB31ABF63DB0087D045 /* Item.m */,
 				9E7B5F991ABF5B9D0087D045 /* Artist.h */,
 				9E7B5F9A1ABF5B9D0087D045 /* Artist.m */,
 				9E7B5F9C1ABF5BE00087D045 /* Master.h */,
 				9E7B5F9D1ABF5BE00087D045 /* Master.m */,
+				9E7B5FA61ABF5D920087D045 /* Release.h */,
+				9E7B5FA71ABF5D920087D045 /* Release.m */,
+				9E7B5FA91ABF5D9F0087D045 /* Label.h */,
+				9E7B5FAA1ABF5D9F0087D045 /* Label.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9E7B5FAD1ABF5E9B0087D045 /* ResponseSerializing */ = {
+			isa = PBXGroup;
+			children = (
+				9E7B5F951ABF4CA90087D045 /* NetworkResponseSerializer.h */,
+				9E7B5FAF1ABF5EFA0087D045 /* SearchResponseSerializer.h */,
+				9E7B5FB01ABF5EFA0087D045 /* SearchResponseSerializer.m */,
+			);
+			name = ResponseSerializing;
+			sourceTree = "<group>";
+		};
+		9E7B5FAE1ABF5EC10087D045 /* RequestSerializing */ = {
+			isa = PBXGroup;
+			children = (
+				9E7B5F881ABF45190087D045 /* NetworkRequestsFactory.h */,
+				9E7B5F891ABF45190087D045 /* NetworkRequestsFactory.m */,
+			);
+			name = RequestSerializing;
 			sourceTree = "<group>";
 		};
 		B7674396D56709EE49FD7CA9 /* Pods */ = {
@@ -381,14 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E7B5F911ABF4B150087D045 /* NetworkResponseSerializerFactory.m in Sources */,
+				9E7B5FB41ABF63DB0087D045 /* Item.m in Sources */,
 				9E4D6DE11ABF1F4B00C5289F /* SearchViewController.m in Sources */,
 				9E7B5F8E1ABF4AA30087D045 /* NetworkManager.m in Sources */,
+				9E7B5FA81ABF5D920087D045 /* Release.m in Sources */,
 				9E4D6DDE1ABF1F4A00C5289F /* AppDelegate.m in Sources */,
 				9E4D6DDB1ABF1F4A00C5289F /* main.m in Sources */,
+				9E7B5FAB1ABF5D9F0087D045 /* Label.m in Sources */,
 				9E4D6E001ABF231800C5289F /* SearchManager.m in Sources */,
 				9E7B5F8A1ABF45190087D045 /* NetworkRequestsFactory.m in Sources */,
 				9E7B5F9B1ABF5B9D0087D045 /* Artist.m in Sources */,
+				9E7B5FB11ABF5EFA0087D045 /* SearchResponseSerializer.m in Sources */,
 				9E4D6E041ABF25B200C5289F /* SearchItemsPresenter.m in Sources */,
 				9E7B5F9E1ABF5BE00087D045 /* Master.m in Sources */,
 			);
