@@ -10,4 +10,8 @@
 
 @interface Master : Item
 
+@property (nonatomic, strong) NSArray *genre;
+
+@property (nonatomic, strong) NSString *year;
+
 @end

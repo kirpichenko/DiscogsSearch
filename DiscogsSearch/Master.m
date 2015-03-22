@@ -10,4 +10,14 @@
 
 @implementation Master
 
++ (EKObjectMapping *)objectMapping
+{
+    return [EKObjectMapping mappingForClass:self withBlock:^(EKObjectMapping *mapping) {
+        [mapping mapPropertiesFromArray:@[@"title", @"year", @"genre"]];
+        [mapping mapKeyPath:@"thumb" toProperty:@"thumbURL" withValueBlock:^id(NSString *key, id value) {
+            return [NSURL URLWithString:value];
+        }];
+    }];
+}
+
 @end

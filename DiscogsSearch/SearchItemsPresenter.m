@@ -11,6 +11,9 @@
 #import "Artist.h"
 #import "ArtistViewController.h"
 
+#import "Master.h"
+#import "MasterViewController.h"
+
 @interface SearchItemsPresenter ()
 @property (nonatomic, weak) UINavigationController *navigationController;
 @end
@@ -35,6 +38,9 @@
 
     if ([item isKindOfClass:[Artist class]]) {
         presentingController = [[ArtistViewController alloc] initWithArtist:(Artist *)item];
+    }
+    else if ([item isKindOfClass:[Master class]]) {
+        presentingController = [[MasterViewController alloc] initWithMasterItem:(Master *)item];
     }
     
     if (presentingController) {
