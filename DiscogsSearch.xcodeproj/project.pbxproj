@@ -25,12 +25,14 @@
 		9E7B5FB11ABF5EFA0087D045 /* SearchResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FB01ABF5EFA0087D045 /* SearchResponseSerializer.m */; };
 		9E7B5FB41ABF63DB0087D045 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FB31ABF63DB0087D045 /* Item.m */; };
 		9E7B5FB71ABF6F1B0087D045 /* SearchItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FB61ABF6F1B0087D045 /* SearchItemCell.m */; };
-		9E7B5FBB1ABF75280087D045 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FBA1ABF75280087D045 /* ArtistViewController.m */; };
+		9E7B5FBB1ABF75280087D045 /* ItemDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FBA1ABF75280087D045 /* ItemDefaultViewController.m */; };
 		9E7B5FBD1ABF79680087D045 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B5FBC1ABF79680087D045 /* SearchViewController.xib */; };
 		9E7B5FBF1ABF7BCB0087D045 /* SearchItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B5FBE1ABF7BCB0087D045 /* SearchItemCell.xib */; };
-		9E7B5FC11ABF7E040087D045 /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B5FC01ABF7E040087D045 /* ArtistViewController.xib */; };
+		9E7B5FC11ABF7E040087D045 /* ItemDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B5FC01ABF7E040087D045 /* ItemDefaultViewController.xib */; };
 		9E7B5FC51ABF81BE0087D045 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FC31ABF81BE0087D045 /* MasterViewController.m */; };
 		9E7B5FC61ABF81BE0087D045 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B5FC41ABF81BE0087D045 /* MasterViewController.xib */; };
+		9E7B5FCA1ABF858C0087D045 /* ReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B5FC81ABF858C0087D045 /* ReleaseViewController.m */; };
+		9E7B5FCB1ABF858C0087D045 /* ReleaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B5FC91ABF858C0087D045 /* ReleaseViewController.xib */; };
 		BC32062B2B81CA3CAFFC890E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D82483B28181D07A7AD6AF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,14 +87,17 @@
 		9E7B5FB31ABF63DB0087D045 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		9E7B5FB51ABF6F1B0087D045 /* SearchItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchItemCell.h; sourceTree = "<group>"; };
 		9E7B5FB61ABF6F1B0087D045 /* SearchItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchItemCell.m; sourceTree = "<group>"; };
-		9E7B5FB91ABF75280087D045 /* ArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
-		9E7B5FBA1ABF75280087D045 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
+		9E7B5FB91ABF75280087D045 /* ItemDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDefaultViewController.h; sourceTree = "<group>"; };
+		9E7B5FBA1ABF75280087D045 /* ItemDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDefaultViewController.m; sourceTree = "<group>"; };
 		9E7B5FBC1ABF79680087D045 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		9E7B5FBE1ABF7BCB0087D045 /* SearchItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchItemCell.xib; sourceTree = "<group>"; };
-		9E7B5FC01ABF7E040087D045 /* ArtistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistViewController.xib; sourceTree = "<group>"; };
+		9E7B5FC01ABF7E040087D045 /* ItemDefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDefaultViewController.xib; sourceTree = "<group>"; };
 		9E7B5FC21ABF81BE0087D045 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		9E7B5FC31ABF81BE0087D045 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		9E7B5FC41ABF81BE0087D045 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		9E7B5FC71ABF858C0087D045 /* ReleaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseViewController.h; sourceTree = "<group>"; };
+		9E7B5FC81ABF858C0087D045 /* ReleaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseViewController.m; sourceTree = "<group>"; };
+		9E7B5FC91ABF858C0087D045 /* ReleaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReleaseViewController.xib; sourceTree = "<group>"; };
 		B5D7E7A3078D1C7D96EC5FDC /* libPods-DiscogsSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiscogsSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D66A7E66952D9D1C0DB02 /* Pods-DiscogsSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscogsSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiscogsSearchTests/Pods-DiscogsSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,12 +261,15 @@
 		9E7B5FB81ABF74F30087D045 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				9E7B5FB91ABF75280087D045 /* ArtistViewController.h */,
-				9E7B5FBA1ABF75280087D045 /* ArtistViewController.m */,
-				9E7B5FC01ABF7E040087D045 /* ArtistViewController.xib */,
+				9E7B5FB91ABF75280087D045 /* ItemDefaultViewController.h */,
+				9E7B5FBA1ABF75280087D045 /* ItemDefaultViewController.m */,
+				9E7B5FC01ABF7E040087D045 /* ItemDefaultViewController.xib */,
 				9E7B5FC21ABF81BE0087D045 /* MasterViewController.h */,
 				9E7B5FC31ABF81BE0087D045 /* MasterViewController.m */,
 				9E7B5FC41ABF81BE0087D045 /* MasterViewController.xib */,
+				9E7B5FC71ABF858C0087D045 /* ReleaseViewController.h */,
+				9E7B5FC81ABF858C0087D045 /* ReleaseViewController.m */,
+				9E7B5FC91ABF858C0087D045 /* ReleaseViewController.xib */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -364,8 +372,9 @@
 				9E7B5FBF1ABF7BCB0087D045 /* SearchItemCell.xib in Resources */,
 				9E4D6DE91ABF1F4B00C5289F /* LaunchScreen.xib in Resources */,
 				9E7B5FC61ABF81BE0087D045 /* MasterViewController.xib in Resources */,
+				9E7B5FCB1ABF858C0087D045 /* ReleaseViewController.xib in Resources */,
 				9E7B5FBD1ABF79680087D045 /* SearchViewController.xib in Resources */,
-				9E7B5FC11ABF7E040087D045 /* ArtistViewController.xib in Resources */,
+				9E7B5FC11ABF7E040087D045 /* ItemDefaultViewController.xib in Resources */,
 				9E4D6DE61ABF1F4B00C5289F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,10 +460,11 @@
 				9E4D6DE11ABF1F4B00C5289F /* SearchViewController.m in Sources */,
 				9E7B5F8E1ABF4AA30087D045 /* NetworkManager.m in Sources */,
 				9E7B5FA81ABF5D920087D045 /* Release.m in Sources */,
-				9E7B5FBB1ABF75280087D045 /* ArtistViewController.m in Sources */,
+				9E7B5FBB1ABF75280087D045 /* ItemDefaultViewController.m in Sources */,
 				9E7B5FB71ABF6F1B0087D045 /* SearchItemCell.m in Sources */,
 				9E4D6DDE1ABF1F4A00C5289F /* AppDelegate.m in Sources */,
 				9E4D6DDB1ABF1F4A00C5289F /* main.m in Sources */,
+				9E7B5FCA1ABF858C0087D045 /* ReleaseViewController.m in Sources */,
 				9E7B5FAB1ABF5D9F0087D045 /* Label.m in Sources */,
 				9E4D6E001ABF231800C5289F /* SearchManager.m in Sources */,
 				9E7B5F8A1ABF45190087D045 /* NetworkRequestsFactory.m in Sources */,

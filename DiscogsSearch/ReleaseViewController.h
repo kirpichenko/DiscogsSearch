@@ -1,5 +1,5 @@
 //
-//  ArtistViewController.h
+//  ReleaseViewController.h
 //  DiscogsSearch
 //
 //  Created by Ievgeniy Kirpichenko on 3/23/15.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class Artist;
+@class Release;
 
-@interface ArtistViewController : UIViewController
+@interface ReleaseViewController : UIViewController
 
-- (id)initWithArtist:(Artist *)artist;
+- (id)initWithRelease:(Release *)release;
 
 @end

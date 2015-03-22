@@ -6,24 +6,25 @@
 //  Copyright (c) 2015 Ievgeniy Kirpichenko. All rights reserved.
 //
 
-#import "ArtistViewController.h"
-#import "Artist.h"
+#import "ItemDefaultViewController.h"
+#import "Item.h"
 
 #import "UIImageView+AFNetworking.h"
 
-@interface ArtistViewController ()
+@interface ItemDefaultViewController ()
 @property (nonatomic, weak) IBOutlet UIImageView *photoImageView;
-@property (nonatomic, strong) Artist *artist;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) Item *item;
 @end
 
-@implementation ArtistViewController
+@implementation ItemDefaultViewController
 
 #pragma mark - Life Cycle
 
-- (id)initWithArtist:(Artist *)artist
+- (id)initWithItem:(Item *)item
 {
     if (self = [super initWithNibName:nil bundle:nil]) {
-        _artist = artist;
+        self.item = item;
     }
     return self;
 }
@@ -32,7 +33,8 @@
 {
     [super viewDidLoad];
     
-    [self.photoImageView setImageWithURL:self.artist.thumbURL];
+    [self.titleLabel setText:self.item.title];
+    [self.photoImageView setImageWithURL:self.item.thumbURL];
 }
 
 @end

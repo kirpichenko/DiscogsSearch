@@ -10,4 +10,6 @@
 
 @interface Release : Item
 
+@property (nonatomic, strong) NSArray *format;
+
 @end

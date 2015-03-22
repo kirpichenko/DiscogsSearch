@@ -19,6 +19,8 @@
 
 @implementation MasterViewController
 
+#pragma mark - Life Cycle
+
 - (id)initWithMasterItem:(Master *)master
 {
     if (self = [super initWithNibName:nil bundle:nil]) {
@@ -27,7 +29,8 @@
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     self.titleLabel.text = self.master.title;

@@ -8,11 +8,13 @@
 
 #import "SearchItemsPresenter.h"
 
-#import "Artist.h"
-#import "ArtistViewController.h"
+#import "ItemDefaultViewController.h"
 
 #import "Master.h"
 #import "MasterViewController.h"
+
+#import "Release.h"
+#import "ReleaseViewController.h"
 
 @interface SearchItemsPresenter ()
 @property (nonatomic, weak) UINavigationController *navigationController;
@@ -34,13 +36,20 @@
 
 - (void)presentItem:(Item *)item
 {
+    if (item == nil) {
+        return;
+    }
+    
     UIViewController *presentingController;
 
-    if ([item isKindOfClass:[Artist class]]) {
-        presentingController = [[ArtistViewController alloc] initWithArtist:(Artist *)item];
+    if ([item isKindOfClass:[Release class]]) {
+        presentingController = [[ReleaseViewController alloc] initWithRelease:(Release *)item];
     }
     else if ([item isKindOfClass:[Master class]]) {
         presentingController = [[MasterViewController alloc] initWithMasterItem:(Master *)item];
+    }
+    else {
+        presentingController = [[ItemDefaultViewController alloc] initWithItem:item];
     }
     
     if (presentingController) {

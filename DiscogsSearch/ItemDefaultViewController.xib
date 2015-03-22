@@ -4,9 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemDefaultViewController">
             <connections>
                 <outlet property="photoImageView" destination="bFl-aN-uSg" id="q75-cq-Qrf"/>
+                <outlet property="titleLabel" destination="Bir-yB-Ibo" id="jiu-iW-lb5"/>
                 <outlet property="view" destination="XaX-uO-KOg" id="d14-7N-F0D"/>
             </connections>
         </placeholder>
@@ -22,10 +23,18 @@
                         <constraint firstAttribute="height" constant="150" id="hRN-Bf-ejN"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-yB-Ibo">
+                    <rect key="frame" x="144" y="367" width="33" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="Bir-yB-Ibo" secondAttribute="centerX" id="5CJ-1q-32W"/>
                 <constraint firstAttribute="centerX" secondItem="bFl-aN-uSg" secondAttribute="centerX" id="85n-Kz-P8Y"/>
+                <constraint firstItem="Bir-yB-Ibo" firstAttribute="top" secondItem="bFl-aN-uSg" secondAttribute="bottom" constant="8" id="Rbg-TI-EUN"/>
                 <constraint firstAttribute="centerY" secondItem="bFl-aN-uSg" secondAttribute="centerY" id="pA6-re-Wr1"/>
             </constraints>
             <point key="canvasLocation" x="210" y="113"/>
