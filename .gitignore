@@ -1,7 +1,7 @@
 syntax: glob
 
 Pods/
-xcuserdata/
-xcworkspace/
+*xcuserdata/
+*xcworkspace/
 
 .DS*

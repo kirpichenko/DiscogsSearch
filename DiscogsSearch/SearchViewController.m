@@ -18,7 +18,7 @@
 #pragma mark - UISearchBarDelegate
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    NSLog(@"search");
+    [self.searchManager findItemsWithQuery:searchBar.text withCompletion:nil];
 }
 
 #pragma mark - Properties

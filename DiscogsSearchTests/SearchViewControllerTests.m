@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import <OCMock/OCMock.h>
+
 #import "SearchViewController.h"
 #import "SearchManager.h"
 
 @interface SearchViewControllerTests : XCTestCase
 @property (nonatomic, strong) SearchViewController *searchViewController;
-@property (nonatomic, strong) SearchManager *searchManager;
 @end
 
 @implementation SearchViewControllerTests
@@ -23,13 +24,23 @@
 {
     [super setUp];
     
-    self.searchManager = [SearchManager new];
     self.searchViewController = [SearchViewController new];
 }
 
 - (void)testThatSearchStartsWhenSearchButtonTapped
 {
+    NSString *const query = @"query";
     
+    OCMockObject *searchBarStub = [OCMockObject niceMockForClass:[UISearchBar class]];
+    [[[searchBarStub stub] andReturn:query] text];
+
+    OCMockObject *searchManagerMock = [OCMockObject niceMockForClass:[SearchManager class]];
+    [[searchManagerMock expect] findItemsWithQuery:query withCompletion:[OCMArg any]];
+    
+    [self.searchViewController setSearchManager:(SearchManager *)searchManagerMock];
+    [self.searchViewController searchBarSearchButtonClicked:(UISearchBar *)searchBarStub];
+    
+    [searchManagerMock verify];
 }
 
 @end
